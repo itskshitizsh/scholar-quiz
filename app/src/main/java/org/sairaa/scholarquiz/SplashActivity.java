@@ -36,15 +36,15 @@ public class SplashActivity extends Activity {
     private void StartAnimation() {
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.alpha);
         anim.reset();
-        ConstraintLayout l = (ConstraintLayout) findViewById(R.id.lin_lay);
+        ConstraintLayout l = findViewById(R.id.lin_lay);
         l.clearAnimation();
         l.startAnimation(anim);
         anim = AnimationUtils.loadAnimation(this, R.anim.translate);
         anim.reset();
-        TextView tv = (TextView) findViewById(R.id.splashtagline);
+        TextView tv = findViewById(R.id.splashtagline);
         tv.clearAnimation();
         tv.startAnimation(anim);
-        TextView tvDev = (TextView) findViewById(R.id.splashDeveloper);
+        TextView tvDev = findViewById(R.id.splashDeveloper);
         tvDev.clearAnimation();
         tvDev.startAnimation(anim);
 
